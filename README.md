@@ -122,7 +122,7 @@ public class HTTPSourceHandler implements org.apache.flume.source.http.HTTPSourc
     a50000.channels.c1.transactionCapacity=500
 
     启动下 cd FLUME_HOME运行：
-    bin/flume-ng agent -c conf -f http_50000.conf  -n a1 -Dflume.root.logger=INFO,console
+    bin/flume-ng agent -c conf -f http_50000.conf  -n a50000 -Dflume.root.logger=INFO,console
 
     启动好了，在浏览器请求下，就可以测试了。
     为什么我要说到这个呢，因为，我不去确定，整合的时候，是不是还有什么包需要替换和删除的，通过这个方式，你就可以慢慢调试了，报错了，发现NODEFINE CLASSS
